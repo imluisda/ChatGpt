@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Kanban</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="/logout">Cerrar sesión</a>
+  <h1>Tablero Kanban</h1>
+  <form id="taskForm">
+    <input type="text" id="title" placeholder="Nueva tarea" required>
+    <button type="submit">Agregar</button>
+  </form>
+  <div class="board">
+    <div class="column" data-status="todo">
+      <h2>Por hacer</h2>
+      <ul id="todo"></ul>
+    </div>
+    <div class="column" data-status="doing">
+      <h2>En progreso</h2>
+      <ul id="doing"></ul>
+    </div>
+    <div class="column" data-status="done">
+      <h2>Hecho</h2>
+      <ul id="done"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
